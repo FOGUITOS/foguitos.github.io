@@ -101,7 +101,7 @@ export const multiphysics = {
       capabilities: ["Time-dependent power profiles", "Transient temperature fields", "Explicit and implicit time integration", "Thermal response and hotspot evolution"],
       media: {
         type: "image",
-        file: "transient-thermal-analysis.webp",
+        file: "transient-thermal-analysis-0242023127cc.webp",
         label: "Three successive temperature fields from a transformer heating simulation",
       },
     },
