@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="homepage.css">
   <script src="navigation.js" defer></script>
+  <script src="homepage-motion.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -48,7 +49,7 @@
             <a class="button button-secondary" href="#demo">View demo gallery</a>
           </div>
         </div>
-        <div class="home-media"><img src="homepage-media/llc-temperature-field.webp" alt="Simulated three-dimensional temperature field on an LLC converter" loading="eager" decoding="async"></div>
+        <div class="home-media"><video src="homepage-media/llc-heating-loop.mp4" poster="homepage-media/llc-temperature-field.webp" aria-label="Simulated temperature field evolving during LLC converter heating" controls playsinline preload="none" muted loop data-autoplay-loop></video></div>
       </div>
     </section>
 
@@ -70,21 +71,21 @@
           <li class="home-module">
             <span class="home-step" aria-hidden="true">02</span>
             <h3>Electrical Analysis &amp; Power Losses</h3>
-            <div class="home-media"><img src="homepage-media/loss-distribution.webp" alt="Power-loss distribution on a voxelized PCB assembly" loading="lazy" decoding="async"></div>
+            <div class="home-media"><img src="homepage-media/electrical-analysis-power-losses.webp" alt="PCB conductor losses combined with prescribed component power losses" loading="lazy" decoding="async"></div>
             <p>Define component power dissipation directly or calculate DC resistive losses in PCB traces and winding conductors. Transfer the resulting spatial loss distribution to the thermal model.</p>
             <ul class="home-keywords" role="list"><li>User-defined power losses</li><li>PCB electrical analysis</li><li>Winding loss modeling</li><li>Joule heating</li></ul>
           </li>
           <li class="home-module">
             <span class="home-step" aria-hidden="true">03</span>
             <h3>Thermal Boundary Conditions</h3>
-            <div class="home-media"><img src="homepage-media/boundary-conditions.webp" alt="Convection boundary conditions mapped to a voxelized PCB assembly" loading="lazy" decoding="async"></div>
+            <div class="home-media"><img src="homepage-media/thermal-boundary-conditions.webp" alt="Heat transfer schematic and thermal boundary equations" loading="lazy" decoding="async"></div>
             <p>Configure convection coefficients, ambient or reference temperature, and surface boundary conditions. The thermal model accounts for solid conduction and prescribed convection.</p>
             <ul class="home-keywords" role="list"><li>Convection coefficients</li><li>Ambient temperature</li><li>Cooling conditions</li></ul>
           </li>
           <li class="home-module">
             <span class="home-step" aria-hidden="true">04</span>
             <h3>Thermal Simulation</h3>
-            <div class="home-media"><img src="homepage-media/temperature-field.webp" alt="FOGUITOS interface showing a voxel model and its calculated temperature field" loading="lazy" decoding="async"></div>
+            <div class="home-media"><img src="homepage-media/thermal-simulation-steady-state.webp" alt="FOGUITOS steady-state solver showing the voxel model and its temperature field" loading="lazy" decoding="async"></div>
             <p>Compute three-dimensional temperature fields under steady-state or time-dependent operating conditions. Visualize temperature evolution, local hotspots and the thermal response of individual components.</p>
             <ul class="home-keywords" role="list"><li>Steady-state analysis</li><li>Transient analysis</li><li>3D temperature fields</li><li>Hotspot identification</li></ul>
           </li>
@@ -127,7 +128,7 @@
           <li class="home-solver">
             <div class="home-solver-heading"><h3>Transient Thermal Analysis</h3></div>
             <p>Compute the evolution of three-dimensional temperature fields for time-varying power dissipation and specified thermal boundary conditions.</p>
-            <div class="home-media"><img src="homepage-media/transient-temperature-field.webp" alt="Transient temperature distribution in a circular assembly during heating" loading="lazy" decoding="async"></div>
+            <div class="home-media"><img src="homepage-media/transient-thermal-analysis.webp" alt="Three successive temperature fields from a transformer heating simulation" loading="lazy" decoding="async"></div>
             <p class="home-capability-label">Key capabilities</p>
             <ul class="home-keywords" role="list"><li>Time-dependent power profiles</li><li>Transient temperature fields</li><li>Explicit and implicit time integration</li><li>Thermal response and hotspot evolution</li></ul>
           </li>

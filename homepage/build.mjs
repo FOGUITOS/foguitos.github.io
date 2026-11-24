@@ -37,9 +37,12 @@ function renderMedia(entry, eager = false) {
     case "image":
       element = `<img src="${src}" alt="${label}" loading="${loading}" decoding="async">`;
       break;
-    case "video":
-      element = `<video src="${src}" aria-label="${label}" controls playsinline preload="none"></video>`;
+    case "video": {
+      const poster = media.poster ? ` poster="${mediaUrl(media.poster)}"` : "";
+      const playback = media.autoplayLoop ? " muted loop data-autoplay-loop" : "";
+      element = `<video src="${src}"${poster} aria-label="${label}" controls playsinline preload="none"${playback}></video>`;
       break;
+    }
     case "embed":
       element = `<iframe src="${src}" title="${label}" loading="${loading}" allowfullscreen></iframe>`;
       break;

@@ -2,6 +2,7 @@
 // A media entry specifies a type (image, video or embed), file and accessible label.
 // Place assets under dist/homepage-media. Image includes GIF, video accepts MP4 or
 // WebM, and embed points to an HTML viewer. Use null to keep a reserved frame.
+// A video may include a poster file and opt into autoplayLoop.
 
 export const hero = {
   eyebrow: "VOXEL-BASED MULTIPHYSICS SIMULATION",
@@ -11,9 +12,11 @@ export const hero = {
     "From PCB traces and power semiconductor devices to magnetic components and complete power converters, FOGUITOS provides a unified approach to physics-based modeling and numerical simulation.",
   ],
   media: {
-    type: "image",
-    file: "llc-temperature-field.webp",
-    label: "Simulated three-dimensional temperature field on an LLC converter",
+    type: "video",
+    file: "llc-heating-loop.mp4",
+    poster: "llc-temperature-field.webp",
+    autoplayLoop: true,
+    label: "Simulated temperature field evolving during LLC converter heating",
   },
 };
 
@@ -38,8 +41,8 @@ export const workflow = {
       keywords: ["User-defined power losses", "PCB electrical analysis", "Winding loss modeling", "Joule heating"],
       media: {
         type: "image",
-        file: "loss-distribution.webp",
-        label: "Power-loss distribution on a voxelized PCB assembly",
+        file: "electrical-analysis-power-losses.webp",
+        label: "PCB conductor losses combined with prescribed component power losses",
       },
     },
     {
@@ -48,8 +51,8 @@ export const workflow = {
       keywords: ["Convection coefficients", "Ambient temperature", "Cooling conditions"],
       media: {
         type: "image",
-        file: "boundary-conditions.webp",
-        label: "Convection boundary conditions mapped to a voxelized PCB assembly",
+        file: "thermal-boundary-conditions.webp",
+        label: "Heat transfer schematic and thermal boundary equations",
       },
     },
     {
@@ -58,8 +61,8 @@ export const workflow = {
       keywords: ["Steady-state analysis", "Transient analysis", "3D temperature fields", "Hotspot identification"],
       media: {
         type: "image",
-        file: "temperature-field.webp",
-        label: "FOGUITOS interface showing a voxel model and its calculated temperature field",
+        file: "thermal-simulation-steady-state.webp",
+        label: "FOGUITOS steady-state solver showing the voxel model and its temperature field",
       },
     },
   ],
@@ -98,8 +101,8 @@ export const multiphysics = {
       capabilities: ["Time-dependent power profiles", "Transient temperature fields", "Explicit and implicit time integration", "Thermal response and hotspot evolution"],
       media: {
         type: "image",
-        file: "transient-temperature-field.webp",
-        label: "Transient temperature distribution in a circular assembly during heating",
+        file: "transient-thermal-analysis.webp",
+        label: "Three successive temperature fields from a transformer heating simulation",
       },
     },
     {
