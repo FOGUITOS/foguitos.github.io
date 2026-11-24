@@ -72,7 +72,7 @@ function renderHero() {
           </div>
           <div class="home-actions">
             <a class="button button-primary" href="#workflow">Explore the workflow</a>
-            <a class="button button-secondary" href="#documents">Documentation</a>
+            <a class="button button-secondary" href="#demo">View demo gallery</a>
           </div>
         </div>
         ${renderMedia(hero, true)}
