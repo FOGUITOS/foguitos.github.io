@@ -255,9 +255,7 @@ html:has(:is(.home-actions a, .home-feature a):focus-visible) { scroll-behavior:
 .home-principles li { padding-block-start: .875rem; border-block-start: 1px solid var(--rule); }
 .home-principles p { margin: .5rem 0 0; }
 
-.home-showcase-reserve, .home-features { margin-block-start: var(--home-space); }
-.home-showcase-reserve .home-media { aspect-ratio: auto; min-block-size: clamp(10rem, 19vw, 17rem); }
-.home-features { display: grid; gap: var(--home-space); }
+.home-features { display: grid; gap: var(--home-space); margin-block-start: var(--home-space); }
 .home-feature {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);

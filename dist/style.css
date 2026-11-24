@@ -112,7 +112,6 @@ h2 {
 }
 .content-slot { border: 1px solid var(--rule); background: var(--paper); }
 .text-slot { min-block-size: 8.5rem; background: var(--surface); }
-.demo-hint { margin: .875rem 0 0; }
 .demo-cases {
   display: grid;
   gap: clamp(2.75rem, 5.5vw, 5rem);

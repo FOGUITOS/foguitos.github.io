@@ -48,7 +48,7 @@
             <a class="button button-secondary" href="#demo">View demo gallery</a>
           </div>
         </div>
-        <div class="home-media home-media--reserved"><span>Simulation view</span></div>
+        <div class="home-media"><img src="homepage-media/llc-temperature-field.webp" alt="Simulated three-dimensional temperature field on an LLC converter" loading="eager" decoding="async"></div>
       </div>
     </section>
 
@@ -63,28 +63,28 @@
           <li class="home-module">
             <span class="home-step" aria-hidden="true">01</span>
             <h3>Geometry &amp; Modeling</h3>
-            <div class="home-media home-media--reserved"><span>Voxel model</span></div>
+            <div class="home-media"><img src="homepage-media/voxel-model.webp" alt="CAD geometry and PCB Gerber layers combined into a voxel model" loading="lazy" decoding="async"></div>
             <p>Import STL geometry exported from CAD and PCB Gerber files to construct three-dimensional voxel-based models. Assign material properties and configure individual components within a modular geometry representation.</p>
             <ul class="home-keywords" role="list"><li>CAD import (STL)</li><li>Gerber import</li><li>Voxelization</li><li>Material assignment</li></ul>
           </li>
           <li class="home-module">
             <span class="home-step" aria-hidden="true">02</span>
             <h3>Electrical Analysis &amp; Power Losses</h3>
-            <div class="home-media home-media--reserved"><span>Loss distribution</span></div>
+            <div class="home-media"><img src="homepage-media/loss-distribution.webp" alt="Power-loss distribution on a voxelized PCB assembly" loading="lazy" decoding="async"></div>
             <p>Define component power dissipation directly or calculate DC resistive losses in PCB traces and winding conductors. Transfer the resulting spatial loss distribution to the thermal model.</p>
             <ul class="home-keywords" role="list"><li>User-defined power losses</li><li>PCB electrical analysis</li><li>Winding loss modeling</li><li>Joule heating</li></ul>
           </li>
           <li class="home-module">
             <span class="home-step" aria-hidden="true">03</span>
             <h3>Thermal Boundary Conditions</h3>
-            <div class="home-media home-media--reserved"><span>Boundary conditions</span></div>
+            <div class="home-media"><img src="homepage-media/boundary-conditions.webp" alt="Convection boundary conditions mapped to a voxelized PCB assembly" loading="lazy" decoding="async"></div>
             <p>Configure convection coefficients, ambient or reference temperature, and surface boundary conditions. The thermal model accounts for solid conduction and prescribed convection.</p>
-            <ul class="home-keywords" role="list"><li>Convection coefficients</li><li>Ambient temperature</li><li>Cooling conditions</li><li>Thermal radiation (future work)</li></ul>
+            <ul class="home-keywords" role="list"><li>Convection coefficients</li><li>Ambient temperature</li><li>Cooling conditions</li></ul>
           </li>
           <li class="home-module">
             <span class="home-step" aria-hidden="true">04</span>
             <h3>Thermal Simulation</h3>
-            <div class="home-media home-media--reserved"><span>Temperature field</span></div>
+            <div class="home-media"><img src="homepage-media/temperature-field.webp" alt="FOGUITOS interface showing a voxel model and its calculated temperature field" loading="lazy" decoding="async"></div>
             <p>Compute three-dimensional temperature fields under steady-state or time-dependent operating conditions. Visualize temperature evolution, local hotspots and the thermal response of individual components.</p>
             <ul class="home-keywords" role="list"><li>Steady-state analysis</li><li>Transient analysis</li><li>3D temperature fields</li><li>Hotspot identification</li></ul>
           </li>
@@ -113,28 +113,28 @@
           <li class="home-solver">
             <div class="home-solver-heading"><h3>DC Electrical Analysis</h3></div>
             <p>Analyze the electrical behavior of conductive structures under DC operating conditions, including voltage distribution, current flow and resistive power losses.</p>
-            <div class="home-media home-media--reserved"><span>Voltage and current fields</span></div>
+            <div class="home-media"><img src="homepage-media/voltage-and-current-fields.webp" alt="DC voltage distribution in voxelized winding conductors" loading="lazy" decoding="async"></div>
             <p class="home-capability-label">Key capabilities</p>
             <ul class="home-keywords" role="list"><li>Voltage drop</li><li>Current distribution</li><li>Electrical resistance</li><li>Joule losses</li></ul>
           </li>
           <li class="home-solver">
             <div class="home-solver-heading"><h3>AC Electrical Analysis</h3><span class="home-status">In development</span></div>
             <p>Research in frequency-dependent electrical modeling focuses on current redistribution and AC losses in conductive structures.</p>
-            <div class="home-media home-media--reserved"><span>AC current distribution</span></div>
+            <div class="home-media"><img src="homepage-media/ac-current-distribution.webp" alt="Research plots comparing AC current crowding in voxelized copper" loading="lazy" decoding="async"></div>
             <p class="home-capability-label">Research directions</p>
             <ul class="home-keywords" role="list"><li>Frequency-dependent impedance</li><li>Skin effect</li><li>Proximity effect</li><li>AC conductor losses</li></ul>
           </li>
           <li class="home-solver">
             <div class="home-solver-heading"><h3>Transient Thermal Analysis</h3></div>
             <p>Compute the evolution of three-dimensional temperature fields for time-varying power dissipation and specified thermal boundary conditions.</p>
-            <div class="home-media home-media--reserved"><span>Transient temperature field</span></div>
+            <div class="home-media"><img src="homepage-media/transient-temperature-field.webp" alt="Transient temperature distribution in a circular assembly during heating" loading="lazy" decoding="async"></div>
             <p class="home-capability-label">Key capabilities</p>
             <ul class="home-keywords" role="list"><li>Time-dependent power profiles</li><li>Transient temperature fields</li><li>Explicit and implicit time integration</li><li>Thermal response and hotspot evolution</li></ul>
           </li>
           <li class="home-solver">
             <div class="home-solver-heading"><h3>Steady-State Thermal Analysis</h3></div>
             <p>Calculate equilibrium temperature distributions for specified power losses and thermal boundary conditions.</p>
-            <div class="home-media home-media--reserved"><span>Steady-state temperature field</span></div>
+            <div class="home-media"><img src="homepage-media/steady-state-temperature-field.webp" alt="Steady-state temperature distribution across a voxelized converter" loading="lazy" decoding="async"></div>
             <p class="home-capability-label">Key capabilities</p>
             <ul class="home-keywords" role="list"><li>Three-dimensional temperature distribution</li><li>Thermal equilibrium</li><li>Hotspot identification</li><li>Temperature gradients</li></ul>
           </li>
@@ -189,13 +189,6 @@
       </div>
     </section>
 
-    <section class="template-section home-section" id="features" aria-labelledby="features-title" tabindex="-1">
-      <div class="wrap">
-        <h2 id="features-title">Explore FOGUITOS in action.</h2>
-        <div class="home-showcase-reserve"><div class="home-media home-media--reserved"><span>Software feature view</span></div></div>
-      </div>
-    </section>
-
     <!-- Homepage end. -->
 
     <section class="template-section" id="documents" aria-labelledby="documents-title" tabindex="-1" hidden>
@@ -212,7 +205,6 @@
       <span class="legacy-anchor" id="gallery" aria-hidden="true"></span>
       <div class="wrap">
         <h2 id="demo-title">Demo Gallery</h2>
-        <p class="demo-hint">Open the original image in a new tab.</p>
         <div class="demo-cases">
           <section class="demo-case" aria-labelledby="llc-demo-title">
             <h3 id="llc-demo-title">LLC converter</h3>

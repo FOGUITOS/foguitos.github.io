@@ -192,13 +192,14 @@ function renderFeature(feature) {
 
 function renderShowcase() {
   const features = showcase.features.filter((feature) => feature.visible);
-  const content = features.length
-    ? `        <div class="home-features">\n${features.map(renderFeature).join("\n")}\n        </div>`
-    : `        <div class="home-showcase-reserve">${renderMedia(showcase)}</div>`;
+  if (!features.length) return "";
+
   return `    <section class="template-section home-section" id="features" aria-labelledby="features-title" tabindex="-1">
       <div class="wrap">
         <h2 id="features-title">${escape(showcase.heading)}</h2>
-${content}
+        <div class="home-features">
+${features.map(renderFeature).join("\n")}
+        </div>
       </div>
     </section>`;
 }
@@ -211,7 +212,7 @@ if (first < 0 || last <= first || page.lastIndexOf(start) !== first || page.last
 }
 
 const newline = page.includes("\r\n") ? "\r\n" : "\n";
-const sections = [renderHero(), renderWorkflow(), renderMultiphysics(), renderNumericalFramework(), renderShowcase()];
+const sections = [renderHero(), renderWorkflow(), renderMultiphysics(), renderNumericalFramework(), renderShowcase()].filter(Boolean);
 const block = [start, ...sections, end].join("\n\n").replaceAll("\n", newline);
 const output = page.slice(0, first) + block + page.slice(last + end.length);
 
